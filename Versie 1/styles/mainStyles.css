@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+section {
+	display: flex;
+	height: 50vh;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+section h1 {
+	margin-bottom: 1em;
+}
+section p {
+	margin-bottom: 1em;
+}
+section span {
+	background-color: grey;
+	color: white;
+	padding: .2em;
+}
+section:last-of-type {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+section:last-of-type h1 {
+	grid-column: 1 / 4;
+}
