@@ -16,6 +16,8 @@
 }
 body {
 	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+	color: white;
 }
 .scroll {
 	overflow-y: scroll;
@@ -33,14 +35,29 @@ section {
 }
 section h1 {
 	margin-bottom: 1em;
+	font-size: 3em;
 }
-section p {
-	margin-bottom: 1em;
+section h1 button {
+	all: unset;
+}
+section h1 button:focus {
+	all: unset;
+	border-bottom: .1em solid white;
+}
+section button {
+	font-size: 1.5em;
+	margin-bottom: 1.5em;
+	background-color: white;
+	padding: .3em;
+}
+section button:focus {
+	font-size: 2em;
+	margin-bottom: 1.5em;
+	background-color: orange;
+	color: black;
 }
 section span {
-	background-color: black;
-	color: white;
-	padding: .3em;
+	opacity: 0;
 }
 section:last-of-type {
 	display: grid;
@@ -52,8 +69,10 @@ section:last-of-type {
 section:last-of-type h1 {
 	grid-column: 1 / 4;
 }
-section:last-of-type div {
-	background-color: black;
-	color: white;
+section:last-of-type a {
+	background-color: white;
+	color: black;
 	padding: 1em;
+	font-size: 1.5em;
+	text-decoration: none;
 }
