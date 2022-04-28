@@ -48,12 +48,12 @@ section button {
 	font-size: 1.5em;
 	margin-bottom: 1.5em;
 	background-color: white;
-	padding: .3em;
+	padding: .5em;
 }
 section button:focus {
 	font-size: 2em;
-	margin-bottom: 1.5em;
-	background-color: orange;
+	margin-bottom: 2em;
+	background-color: #FF6600;
 	color: black;
 }
 section span {
@@ -64,15 +64,34 @@ section:last-of-type {
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 2em;
 	margin: 2em;
-	height: fit-content;
 }
 section:last-of-type h1 {
 	grid-column: 1 / 4;
 }
-section:last-of-type a {
+section:last-of-type button {
 	background-color: white;
 	color: black;
-	padding: 1em;
+	padding: 2.5em;
 	font-size: 1.5em;
 	text-decoration: none;
+}
+section:last-of-type button {
+	background-color: white;
+	color: black;
+	padding: 1.5em;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+section:last-of-type button:focus {
+	font-size: 2em;
+	margin-bottom: 1em;
+	background-color: #FF6600;
+	color: black;
+}
+section:last-of-type h1 button {
+	all: unset;
+}
+section:last-of-type h1 button:focus {
+	all: unset;
+	border-bottom: .1em solid white;
 }
