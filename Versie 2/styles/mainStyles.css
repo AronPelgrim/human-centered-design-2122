@@ -95,7 +95,7 @@ section:last-of-type h1 button {
 }
 section:last-of-type h1 button:focus {
 	all: unset;
-	border-bottom: .1em solid white;
+	border-bottom: .1em solid #FF6600;
 }
 section input {
 	font-size: 2em;
