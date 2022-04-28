@@ -42,7 +42,7 @@ section h1 button {
 }
 section h1 button:focus {
 	all: unset;
-	border-bottom: .1em solid white;
+	border-bottom: .1em solid #FF6600;
 }
 section button {
 	font-size: 1.5em;
@@ -96,4 +96,11 @@ section:last-of-type h1 button {
 section:last-of-type h1 button:focus {
 	all: unset;
 	border-bottom: .1em solid white;
+}
+section input {
+	font-size: 2em;
+	padding: .3em;
+}
+section input:focus {
+	background-color: #FF6600;
 }
