@@ -49,12 +49,14 @@ section button {
 	margin-bottom: 1.5em;
 	background-color: white;
 	padding: .5em;
+	padding-left: 10%;
 }
 section button:focus {
 	font-size: 2em;
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 	background-color: #FF6600;
 	color: black;
+	padding-left: 13%;
 }
 section span {
 	opacity: 0;
