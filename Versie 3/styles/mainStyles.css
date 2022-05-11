@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+::-webkit-scrollbar {
+	width: 1em;
+}
+::-webkit-scrollbar-track {
+	background: black;
+}
+::-webkit-scrollbar-thumb {
+	background: white;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #ececec;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+	color: white;
+}
+.scroll {
+	overflow-y: scroll;
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+}
+section {
+	scroll-snap-align: start;
+	display: flex;
+	height: 100vh;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+section h1 {
+	margin-bottom: 1em;
+	font-size: 3em;
+}
+section h1 button {
+	all: unset;
+}
+section h1 button:focus {
+	all: unset;
+	border-bottom: .1em solid #FF6600;
+}
+section a {
+	font-size: 1.5em;
+	margin-bottom: 1.5em;
+	background-color: white;
+	padding: .5em;
+	padding-left: 10%;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+section a:focus {
+	font-size: 2em;
+	margin-bottom: 1.5em;
+	background-color: #FF6600;
+	color: white;
+	padding-left: 13%;
+}
+section span {
+	opacity: 0;
+}
+section:first-of-type {
+	display: grid;
+	grid-template-columns: 20em 20em 20em;
+	gap: 3em;
+	margin: 2em;
+	height: 50vh;
+	padding-top: 20vh;
+	margin-bottom: 30vh;
+}
+section:first-of-type h1 {
+	grid-column: 1 / 4;
+}
+section:first-of-type button {
+	background-color: white;
+	color: black;
+	padding: 2.5em;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+section:first-of-type button h2 {
+	margin-bottom: .5em;
+}
+section:first-of-type button {
+	background-color: white;
+	color: black;
+	padding: 1.5em;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+section:first-of-type button:focus {
+	font-size: 1.8em;
+	margin-bottom: 1em;
+	background-color: #FF6600;
+	color: white;
+}
+section:first-of-type h1 button {
+	all: unset;
+}
+section:first-of-type h1 button:focus {
+	all: unset;
+	border-bottom: .1em solid #FF6600;
+}
+section input {
+	font-size: 2em;
+	padding: .3em;
+}
+section input:focus {
+	background-color: #FF6600;
+}
+section:nth-of-type(2) button {
+	background-color: white;
+	color: black;
+	padding: 2.5em;
+}
+section:nth-of-type(2) button {
+	background-color: white;
+	color: black;
+	padding: 2em;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+section:nth-of-type(2) button:focus {
+	border: 1em solid #FF6600;
+}
+section:nth-of-type(2) h1 button {
+	all: unset;
+}
+section:nth-of-type(2) h1 button:focus {
+	all: unset;
+	border-bottom: .1em solid #FF6600;
+}
+section:nth-of-type(2) button h2 {
+	margin-bottom: .5em;
+}
+section:nth-of-type(2) p {
+	padding: .8em;
+	text-align: left;
+}
