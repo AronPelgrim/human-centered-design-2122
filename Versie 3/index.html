@@ -14,31 +14,33 @@
     </head>
     <body>
         <div class="scroll">
-            <section id="vier" class="calendar">
+            <section id="een" class="calendar">
                 <h1 lang="nl"><button>Dit zijn je trainingen van deze week</button></h1>
-                <button>
+                <a href="#drie" class="back">Datum aanpassen</a>
+                <a href="#twee">
                     <h2>1 mei 2022</h2>
                     <p>Hardlooptraining</p>
-                </button>
-                <button>
+                </a>
+                <a href="#twee">
                     <h2>3 mei 2022</h2>
                     <p>Hardlooptraining</p>
-                </button>
-                <button>
+                </a>
+                <a href="#twee">
                     <h2>4 mei 2022</h2>
                     <p>Krachttraining</p>
-                </button>
-                <button>
+                </a>
+                <a href="#twee">
                     <h2>5 mei 2022</h2>
                     <p>Hardlooptraining</p>
-                </button>
-                <button>
+                </a>
+                <a href="#twee">
                     <h2>6 mei 2022</h2>
                     <p>Krachttraining</p>
-                </button>
+                </a>
             </section>
-            <section id="vier" class="calendar">
+            <section id="twee" class="calendar">
                 <h1 lang="nl"><button>Training van 1 mei 2022</button></h1>
+                <a href="#een" class="back">Terug naar overzicht</a>
                 <button>
                     <p>1. Jog rustig 3 kilometer als warming-up.</p>
                     <p>2. Loop 400 meter in marathontempo.</p>
@@ -46,24 +48,15 @@
                     <p>4. Loop drie kilometer uit in dribbeltempo.</p>
                 </button>
             </section>
-            <section id="een">
-                <h1 lang="nl"><button>Op welk dagdeel zoek je je training?</button></h1>
-                <a href="https://www.w3schools.com">Ochtendtraining<span class="key">Geselecteerd</span></a>
-                <a href="https://www.w3schools.com">Middagtraining<span class="key">Geselecteerd</span></a>
-                <a href="https://www.w3schools.com">Avondtraining<span class="key">Geselecteerd</span></a>
-                <a href="https://www.w3schools.com">Herhaal de opties<span class="key">Geselecteerd</span></a>
-            </section>
-            <section id="twee">
-                <h1 lang="nl"><button>Naar wat voor training ben je op zoek?</button></h1>
-                <a href="https://www.w3schools.com">Krachttraining<span class="key">Geselecteerd</span></a>
-                <a href="https://www.w3schools.com">Cardio<span class="key">Geselecteerd</span></a>
-                <a href="https://www.w3schools.com">Vorige opties<span class="key">Geselecteerd</span></a>
-                <a href="https://www.w3schools.com">Herhaal de opties<span class="key">Geselecteerd</span></a>
-            </section>
             <section id="drie">
-                <h1 lang="nl"><button>Van welke week wil je de trainingen zoeken?</button></h1>
-                <a href="https://www.w3schools.com">De huidige week<span class="key">Geselecteerd</span></a>
-                <input type="date"></input>
+                <h1 lang="nl"><button>Van welke datum zoek je de weektraining?</button></h1>
+                <a href="#een" class="back">Terug naar overzicht</a>
+                <label>Dag</label>
+                <input type="text" placeholder="Dag"></input>
+                <label>Maand</label>
+                <input type="text" placeholder="Maand"></input>
+                <label>Jaar</label>
+                <input type="text" placeholder="Jaar"></input>
             </section>
         </div>
     </body>
