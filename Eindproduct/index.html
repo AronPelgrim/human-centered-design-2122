@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/mainStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script type="module" src="scripts/app.js"></script>
+    </head>
+    <body>
+        <div class="scroll">
+            <section id="een" class="calendar">
+                <h1 lang="nl"><button>Dit zijn je trainingen van deze week</button></h1>
+                <a href="#drie" class="back">Datum aanpassen</a>
+                <a href="#twee">
+                    <h2>1 mei 2022</h2>
+                    <p>Hardlooptraining</p>
+                </a>
+                <a href="#twee">
+                    <h2>3 mei 2022</h2>
+                    <p>Hardlooptraining</p>
+                </a>
+                <a href="#twee">
+                    <h2>4 mei 2022</h2>
+                    <p>Krachttraining</p>
+                </a>
+                <a href="#twee">
+                    <h2>5 mei 2022</h2>
+                    <p>Hardlooptraining</p>
+                </a>
+                <a href="#twee">
+                    <h2>6 mei 2022</h2>
+                    <p>Krachttraining</p>
+                </a>
+            </section>
+            <section id="twee" class="calendar">
+                <h1 lang="nl"><button>Training van 1 mei 2022</button></h1>
+                <a href="#een" class="back">Terug naar overzicht</a>
+                <button>
+                    <p>1. Jog rustig 3 kilometer als warming-up.</p>
+                    <p>2. Loop 400 meter in marathontempo.</p>
+                    <p>3. Herstel met een dribbelpauze van vier minuten.</p>
+                    <p>4. Loop drie kilometer uit in dribbeltempo.</p>
+                </button>
+            </section>
+            <section id="drie">
+                <h1 lang="nl"><button>Van welke datum zoek je de weektraining?</button></h1>
+                <a href="#een" class="back">Terug naar overzicht</a>
+                <label>Dag</label>
+                <input type="text" placeholder="Dag"></input>
+                <label>Maand</label>
+                <input type="text" placeholder="Maand"></input>
+                <label>Jaar</label>
+                <input type="text" placeholder="Jaar"></input>
+            </section>
+        </div>
+    </body>
+</html>
