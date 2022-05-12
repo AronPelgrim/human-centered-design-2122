@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	transition: .2s;
 }
 ::-webkit-scrollbar {
 	display: none;
@@ -55,17 +56,15 @@ section a {
 	margin-bottom: 1.5em;
 	background-color: white;
 	padding: .5em;
-	padding-left: 10%;
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
 }
-section a:not(.back):focus {
+section a:not(.back, .back2):focus {
 	font-size: 2em;
 	margin-bottom: 1.5em;
 	background-color: #FF6600;
 	color: white;
-	padding-left: 13%;
 }
 section span {
 	opacity: 0;
@@ -76,7 +75,7 @@ section:first-of-type {
 section:first-of-type:target {
 	display: grid;
 	grid-template-columns: 20em 20em 20em;
-	gap: 3em;
+	gap: 1.5em;
 	margin: 2em;
 	height: 40vh;
 	padding-top: 10vh;
@@ -84,7 +83,7 @@ section:first-of-type:target {
 section:first-of-type h1 {
 	grid-column: 1 / 4;
 }
-section:first-of-type a:not(.back) {
+section:first-of-type a:not(.back, .back2) {
 	background-color: white;
 	color: black;
 	padding: 2.5em;
@@ -94,10 +93,18 @@ section:first-of-type a:not(.back) {
 section:first-of-type a h2 {
 	margin-bottom: .5em;
 }
-section:first-of-type a:not(.back):focus {
+section:first-of-type a:not(.back, .back2):focus {
 	font-size: 1.5em;
 	background-color: #FF6600;
 	color: white;
+}
+section:first-of-type .back2 {
+	bottom: -18.8em;
+	right: 0;
+}
+section:first-of-type .back {
+	top: 0em;
+	left: 0em;
 }
 section:first-of-type h1 button {
 	all: unset;
@@ -123,17 +130,23 @@ section:nth-of-type(2) button {
 section:nth-of-type(2) button:focus {
 	border: .5em solid #FF6600;
 }
-.back {
+.back, .back2 {
 	background-color: white;
 	color: black;
 	padding: 1em;
 	font-size: 1.3em;
 	text-decoration: none;
 	position: absolute;
+}
+.back {
 	top: 1em;
 	left: 1em;
 }
-.back:focus {
+.back2 {
+	bottom: 0;
+	right: 1em;
+}
+.back:focus, .back2:focus {
 	border: .5em solid #FF6600 !important;
 }
 section:nth-of-type(2) h1 button {
@@ -150,11 +163,12 @@ section:nth-of-type(2) p {
 	padding: .8em;
 	text-align: left;
 }
-section label {
-	font-size: 2.3em;
-	margin: 1em 0 .2em 0;
-	text-align: left;
-}
 section input {
 	text-align: center;
+	margin: 1em 0 .2em 0;
+}
+section:nth-of-type(3) a:not(.back, .back2) {
+	padding-left: 5em;
+	padding-right: 5em;
+	margin-top: 2em;
 }
