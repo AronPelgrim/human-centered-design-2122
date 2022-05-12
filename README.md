@@ -11,7 +11,7 @@ Voor dit project heb ik een ontwerp-opdracht gekregen, met als doelgroep één s
 -   [License](#license)
 
 ## Proces (in wiki)
-Mijn proces met een user scenario, testverslagen en design principes, staan in de [Wiki](https://github.com/AronPelgrim/human-centered-design-2122/wiki) van deze repository.
+Mijn proces met een user scenario, design principes en testverslagen, staan in de [Wiki](https://github.com/AronPelgrim/human-centered-design-2122/wiki) van deze repository.
 
 ## Installatie
 ```
